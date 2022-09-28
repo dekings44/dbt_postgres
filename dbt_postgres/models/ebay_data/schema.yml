@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: ebay_laptops
+    description: "Sample ebay laptops"
+    database: ebay_laptops
+    schema: public
+    tables:
+      - name: laptops
+        description: "Details of scraped data from ebay.co.uk"
+
