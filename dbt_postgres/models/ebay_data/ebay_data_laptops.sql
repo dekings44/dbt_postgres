@@ -3,7 +3,7 @@ with source_laptops as (
 ),
 
 final as (
-    select * from source_laptops
+    select laptop_state, MAX(drive_price) from source_laptops group by laptop_state
 )
 
 select * from final
